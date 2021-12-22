@@ -238,5 +238,8 @@ SELECT
                 ELSE 0
             END)) AS difference
 FROM
-    bank.trans group by account_id order by difference desc limit 10;
+    bank.trans
+GROUP BY account_id
+ORDER BY difference DESC
+LIMIT 10;
 
